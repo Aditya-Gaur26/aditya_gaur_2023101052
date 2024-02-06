@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>MY INFO</title>
+    <link rel="stylesheet"  id="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <nav style="margin: top 0" id="navbar">
+        <div id="nav-heading">MY WEBSITE</div>
+        <button type="button" id="style1button" value="style1button" class="stylebutton b1"  >Normal mode</button>
+        <button type="button" id="style2button" value="style2button" class="stylebutton b2" >dark mode</button>
+
+
+        <script >
+            'use strict';
+
+            const handleLoad = () => {
+                let style1 = document.getElementById("style1button");
+                let style2 = document.getElementById("style2button");
+                style1.addEventListener('click', handleClick);
+                style2.addEventListener('click', handleClick);
+            };
+
+            const handleClick = (event) => {
+                if(event.target.value === "style1button") {
+                    document.getElementById("stylesheet").href = "style.css";
+                    // should only change article style 
+                    // currently still referring to the whole document
+                } 
+                else {
+                    document.getElementById("stylesheet").href = "dark-mode.css";
+                    // should also only change article style
+                    // also still referring to the whole document
+                }
+            };
+
+            window.addEventListener('load', handleLoad);
+        </script>
+
+
+
+        <div class="nav-attributes">
+            <div  class="att" ><a class="nav-anchor" href="#about_myself">About Myself</a></div>
+            <div  class="att" ><a  class="nav-anchor" href="#educational-background">Educational Background</a></div>
+            <div  class="att" ><a class="nav-anchor" href="#achievements">Achievements</a></div>
+            <div  class="att" ><a class="nav-anchor" href="#skills">Skills</a></div>
+            <div  class="att" ><a class="nav-anchor" href="#socials">Socials</a></div>
+          
+        </div>
+    </nav>
+
+    <div id="webpage" >
+        <div id="about_myself">
+            <div id="abt"><u>ABOUT MYSELF</u></div>
+            <div id="image"></div>
+               <div id="my-info">
+                    My name is Aditya Gaur and I am a fresher at IIIT-HYDERABAD.
+                    I am born and raised in Delhi and am currently in hyderabad to pursue my engineering in Computer Science.
+                    <br><br>
+                    I am 19 years old and I like to play cricket and watch movies.<br><br>
+                    I have a passion for coding and Learning new things.
+                    
+               </div>
+        </div>
+
+        <div id="educational-background">
+           <h1 class="educational-heading" style="text-align:center; padding:40px;" ><u>Educational-background</u></h1>
+           <div class="school">
+                <span  class="school-name" style="margin-top:6%; margin-bottom:6%;">School : Modern Public School,Shalimar Bagh</span>
+                <span class="school-link" style="margin-top:6%; margin-bottom:6% ;"><a title="Link To my School Website" href="http://www.mpsshalimarbagh.com/">MPS</a></span>
+                <span><img style="margin-top:6%; margin-bottom:6%; "src="images/school_logo.jpg" alt="MPS" ></span>
+           </div>
+           <div class="school">
+                <span  class="school-name" style="margin-top: 8%; margin-bottom:2%;">University : IIIT HYDERABAD</span>
+                <span class="school-link" style="margin-top: 8%; margin-bottom:6%; margin-left: 14%;"><a title="Link To my College Website" href="https://www.iiit.ac.in/">IIITH</a></span>
+                <span><img style="margin-left:5%; margin-top:6%; margin-bottom:6%;" src="images/iiithlogo.png" alt="IIITH" ></span>
+           </div>
+        </div>
+
+
+        <div id="achievements">
+            <h1 id="achievement-heading"><u>Acheivements</u></h1>
+            <div class="achievements-list">
+                <div class="trophy-image1"></div>
+                <ol class="achievements-list-block">
+                    <li class="list-elements" >96% in 10th boards</li>
+                    <li class="list-elements">95% in 12th boards</li>
+                    <li class="list-elements">AIR 1202 in JEE MAIN</li>
+                    <li class="list-elements">AIR 2010 in JEE ADVANCE</li>
+                </ol>
+               
+                <div class="trophy-image2"></div>
+            </div>
+            
+               
+        </div>
+
+
+        <div id="skills">
+            <h1 id="skill-heading" ><u>Skills</u></h1>
+            <div id="skillbox">
+                <div class="skillset1"><div class="skillname">C++</div><div class="logo-image-box"><div id="cpp_logo"></div></div></div>
+                <div class="skillset1"><div class="skillname">C</div><div class="logo-image-box"> <div id="c_logo"></div></div></div>
+                <div class="skillset1"><div class="skillname">HTML</div><div class="logo-image-box"><div id="html_logo"></div></div></div>
+                <div class="skillset2"><div class="skillname">CSS</div><div class="logo-image-box"><div id="css_logo"></div></div></div>
+                <div class="skillset2"><div class="skillname">CRICKET</div><div class="logo-image-box"><div id="cricket_logo"></div></div> </div>
+                <div class="skillset2"><div class="skillname">BADMINTON</div><div class="logo-image-box"><div id="badminton_logo"></div></div> </div>
+            </div>
+        </div>
+
+        <div id="blogs">
+            <h1 id="blog-heading"> MY BLOGS</h1>
+            <div id ="blogs-link">
+                <a id="flink" href="blogs.html">View My Blogs Here</a>
+            </div>
+        </div>
+
+        <div id="socials">
+            <h1 id="social-heading">Socials</h1>
+            <div id="socials-links">
+                <button class="link" id="instagram" type="button" onclick="window.location.href='https://www.instagram.com/aditya_gaur26?igsh=MTVvOWcweTg4ZWlpbw%3D%3D&utm_source=qr'" ></button></form>
+                <button class="link" id="gmail"type="button" onclick="window.location.href='mailto:adityagauraa@gmail.com'" ></button>
+                <button class="link" id="github" type="button" onclick="window.location.href='https://github.com/Aditya-Gaur26'" ></button>
+            </div>
+        </div>
+
+
+        <div id="hyperlink">
+            <div id="hyperlink-heading">HYPERLINK</div>
+            <a id="link-to" href="article.txt">Article</a>
+
+        </div>
+
+       
+    </div>
+    <nav id="bottom-nav">
+        <div id="bottom-nav-info">My Website</div>
+    </nav>
+        
+    
+</body>
+</html>

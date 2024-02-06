@@ -1,0 +1,1930 @@
+body {
+    margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+    overflow: auto;
+    background: linear-gradient(315deg, rgb(101, 8, 89) 3%, rgb(19, 55, 92) 38%, rgb(40, 101, 100) 68%, rgb(94, 24, 24) 98%);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.wave {
+    background: rgb(255 255 255 / 25%);
+    border-radius: 1000% 1000% 0 0;
+    position: fixed;
+    width: 200%;
+    height: 12em;
+    animation: wave 10s -3s linear infinite;
+    transform: translate3d(0, 0, 0);
+    opacity: 0.8;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+    bottom: -1.25em;
+    animation: wave 18s linear reverse infinite;
+    opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+    bottom: -2.5em;
+    animation: wave 20s -1s reverse infinite;
+    opacity: 0.9;
+}
+
+@keyframes wave {
+    2% {
+        transform: translateX(1);
+    }
+
+    25% {
+        transform: translateX(-25%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    75% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(1);
+    }
+}
+
+@keyframes fadeIn {
+0% {
+    opacity: 1;
+    }
+    25% {
+    opacity: 1;
+    color:darkblue;
+    }
+    50%{
+    color: green;
+    }
+    75%{
+    color:darkblue;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+
+/* ####################################################################### */
+
+.stylebutton{
+    margin-right: 1%;
+    margin-left: 1%;
+    width:5%;
+    height:70%;
+    margin-top:0.8%;
+    font-size: 20px;
+    padding:0.5%;
+    border-radius:10%;
+    cursor:pointer;
+}
+.stylebutton:hover{
+    background-color: aqua;
+}
+
+.b1{
+    background-color: white;
+    
+}
+.b2{
+    background-color: black;
+    color: white;
+}
+
+
+/* ##################################################################################### */
+
+*{
+    margin:0%;
+    padding:0%;
+}
+
+#navbar{
+    background-color: rgb(134, 151, 0);
+    border:1px solid black;
+    display: flex;
+    justify-content: right;
+    height:85px;
+    width: 100%;
+    position:fixed;
+    top:0; 
+
+}
+
+#nav-heading{
+    animation: fadeIn 5s ease-in-out infinite;
+    width: 20%;
+    font-size: 200%;
+    font-weight:900;
+    padding: auto;
+    margin:auto;
+    font-family:Arial, Helvetica, sans-serif ;
+    color:crimson;
+
+}
+
+.nav-attributes{
+    width:60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+}
+.att{
+    font-size: 130%;       
+    height:40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 15%;
+    background-color: rgb(101, 193, 193);
+
+}
+
+.att:hover{
+    font-size:160%;       
+    height:40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+
+}
+.nav-anchor{
+    font-size: 110%;       
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    cursor: pointer;
+    border-radius: 15%;
+
+}
+.nav-anchor:visited{
+    font-size: 130%;       
+    height:40%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:black;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 15%;
+}
+
+
+
+
+/* ########################################################################################################### */
+
+
+
+
+
+#about_myself{
+    position:relative;
+    z-index: -1;
+   
+}
+#image{
+    width: 20%;
+    height: 324px;
+    position: absolute;
+    border: 1px solid black;
+    right: 10%;
+    top: 0;
+    background-image: url(images/personal_image.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+#abt{
+    border:1px solid black;
+    width: 60%;
+    font-size: 550%;
+    padding-top: 8.6%;
+    padding-bottom: 8.5%;
+    text-align: center;
+    font-family: monospace;
+    font-weight: bolder;
+    background-color:rgb(188, 104, 104);
+    color: rgb(216, 234, 204);
+    
+}
+#webpage{
+    width: 80%;
+    
+    margin:auto;
+    margin-top:100px;
+
+}
+#my-info{
+    margin-top:5%;
+    border:1px solid black;
+    font-size: 230%;
+    font-weight: bold;
+    font-style: italic;
+    text-align: justify;
+    padding:1%;
+    background-image: url(images/patt.jpg) ;
+    color:white;
+}
+
+
+/* ########################################################################################### */
+
+#educational-background{
+    margin-top:20%;
+
+}
+
+.educational-heading{
+    background-color: rgb(117, 29, 44);
+    color: white;
+}
+
+.school{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:grey;
+}
+
+.school-name{
+    font-size: 200%;
+}
+
+.school-link{
+    font-size:200%;
+}
+
+.school-link:hover{
+    font-size:300%;
+}
+
+
+/* ########################################################################################## */
+
+#achievements{
+    margin-top:20%;
+}
+
+#achievement-heading{
+    font-size:40px;
+    text-align: center;
+    padding:20px;
+    background-color: rgb(117, 29, 44) ;
+    color:white;
+}
+.achievements-list{
+    margin-top:30%;
+    width:100%;
+    margin:auto;
+    font-size: 200%;
+    background-color: grey;
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: space-evenly;
+}
+
+.achievements-list-block{
+    width: 30%;
+    margin:auto;
+    font-size: 100%;
+    padding:2%;
+   
+
+}
+.list-elements{
+    margin:10% 0;
+    text-align:center;
+    padding:4%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: yellowgreen;
+    border-radius:5%;
+   
+}
+
+.list-elements:hover{
+    margin:10% 0;
+    text-align:center;
+    padding:4%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:yellow;
+    border-radius:5%;
+}
+
+.trophy-image1,
+.trophy-image2{
+    height:450px;
+    margin-top: 2.5%;
+    width:28%;
+    background-image: url(images/trophy_image.png);
+    background-size: contain;
+
+}
+
+
+/* ########################################################################################## */
+
+
+
+#skill-heading{
+    font-size:350%;
+    text-align: center;
+    padding:40px;
+    margin-top:40%;
+    background-color: rgb(5, 95, 18);
+    color: azure;
+}
+
+#skillbox{
+    border:1px solid black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-image: url(images/skill.jpg);
+    background-size: cover;
+}
+.skillset1{
+    width:30%;
+    height:250px;
+    margin:1%;
+    border:1px solid black;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+.skillset2{
+    width:30%;
+    height:250px;
+    margin:1%;
+    border:1px solid black;
+    margin-bottom:5%;
+
+}
+
+.skillname{
+    text-align:center;
+    font-size: 30px;
+    border-bottom :1px solid black;
+    padding:5px;
+    background-color: rgb(161, 144, 122);
+    color: antiquewhite;
+
+}
+
+.logo-image-box{
+    width:100%;
+    border:1px solid purple;
+    height:73%;
+    background-color:rgb(85, 173, 144);
+}
+#cpp_logo{
+   
+    height:98%;
+    width:43.5%;
+    margin:auto;
+    background-image: url(images/cpp_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#c_logo{
+   
+    height:98%;
+    width:50%;
+    margin:auto;
+    background-image: url(images/c_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#html_logo{
+    
+    height:98%;
+    width:55%;
+    margin:auto;
+    background-image: url(images/html_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#css_logo{
+   
+    height:100%;
+    width:50%;
+    margin:auto;
+    background-image: url(images/css_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#cricket_logo{
+    
+    height:99%;
+    width:66%;
+    margin:auto;
+    background-image: url(images/cricket_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+#badminton_logo{
+  
+    height:100%;
+    width:50%;
+    margin:auto;
+    background-image: url(images/badminton_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+
+/* ############################################################################################ */
+
+
+
+
+#blogs{
+    margin:15% auto;
+    height:300px;
+    width:80%;
+    border: 1px solid black;
+    background-color:darkblue;
+    
+}
+
+#blog-heading{
+    text-align: center;
+    margin-top:2%;
+    color:aliceblue;
+}
+
+#blogs-link{
+    
+    width:45%;
+    font-size:30px;
+    margin-left:38%;
+    margin-top:8%;
+}
+#blogs-link:hover{
+    width:45%;
+    color: red;
+    font-size:40px;
+    margin-left:35%;
+    margin-top:8%;
+}
+
+#blogs-link:visited{
+    width:45%;
+    font-size:30px;
+    margin-left:38%;
+    margin-top:8%;
+    color:black;
+    text-decoration: underline;
+}
+#flink{
+    color:blanchedalmond;
+}
+
+#flink:visited{
+    color:blanchedalmond;
+   
+}
+
+#flink:hover{
+    color:red;
+    font-style: underline;
+}
+
+
+/* ############################################################################################# */
+
+#socials{
+    margin-top: 20%;
+}
+
+#social-heading{
+    font-size:250%;
+    text-decoration: underline;
+    background-color: teal;
+    text-align: center;
+    padding:40px;
+    color: aliceblue;
+}
+
+#socials-links{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    background-color:darkseagreen;
+
+}
+
+.link{
+    margin-top:5%;
+    margin-bottom:5%;
+    width:20%;
+    height:244px;
+    border:1px solid black;
+    cursor: pointer;
+}
+.link:hover{
+    transform: scale(1.1);
+}
+
+#instagram{
+    background-image: url(images/insta_logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#github{
+    background-image: url(images/git_logo.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+}
+
+#gmail{
+    background-image: url(images/gmail_logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ################################################################################### */
+
+/* ################################################################################### */
+
+
+#hyperlink{
+    margin-top:20%;
+    margin-bottom: 10%;
+    display:flex;
+    flex-flow:row;
+    justify-content: center;
+
+}
+
+#hyperlink-heading{
+    width:40%;
+    font-size:40px;
+    border: 1px solid black;
+    padding:20px;
+    background-color: slategray;
+    text-align: center;
+    border-radius: 10%;
+}
+
+#link-to{
+    width: 40%;
+    font-size:50px;
+    font-style: italic;
+    border: 1px solid black;
+    padding:10px;
+    background-color:slategray;
+    text-align: center;
+    border-radius: 10%;
+}
+
+
+#link-to:hover{
+    font-size: 55px;
+}
+
+#link-to:visited{
+    color:black;
+    
+}
+
+/* ########################################################################################### */
+
+#bottom-nav{
+    height:60px;
+    background-color: black;
+    position: absolute;
+    bottom:-1;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+
+#bottom-nav-info{
+    color:white;
+    width:20%;
+    text-align: center;
+    font-size: 150%;
+}
+
+@media screen and (max-width:600px){
+
+    body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(315deg, rgb(101, 8, 89) 3%, rgb(19, 55, 92) 38%, rgb(40, 101, 100) 68%, rgb(94, 24, 24) 98%);
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    
+    .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+    }
+    
+    .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+    }
+    
+    @keyframes wave {
+        2% {
+            transform: translateX(1);
+        }
+    
+        25% {
+            transform: translateX(-25%);
+        }
+    
+        50% {
+            transform: translateX(-50%);
+        }
+    
+        75% {
+            transform: translateX(-25%);
+        }
+    
+        100% {
+            transform: translateX(1);
+        }
+    }
+    
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 1;
+          }
+          25% {
+            opacity: 1;
+            color:darkblue;
+          }
+          50%{
+            color: green;
+          }
+          75%{
+            color:darkblue;
+          }
+          100% {
+            opacity: 1;
+          }
+      }
+    
+    /* ####################################################################### */
+    
+    
+    .stylebutton{
+        margin-right: 1%;
+        margin-left: 1%;
+        width:15%;
+        height:70%;
+        margin-top:0.8%;
+        font-size: 15px;
+        padding:0.5%;
+        border-radius:10%;
+        cursor:pointer;
+    }
+    .stylebutton:hover{
+        background-color: aqua;
+    }
+    
+    .b1{
+        background-color: white;
+        
+    }
+    .b2{
+        background-color: black;
+        color: white;
+    }
+    
+    /* ##################################################################################### */
+    
+ 
+    *{
+        margin:0%;
+        padding:0%;
+    }
+    
+    #navbar{
+        background-color: rgb(134, 151, 0);
+        border:1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        height:85px;
+        width: 100%;
+        position:fixed;
+        top:0;
+    
+    }
+    
+    #nav-heading{
+        animation: fadeIn 5s ease-in-out infinite;
+        width: 20%;
+        font-size: 131%;
+        font-weight: 600;
+        padding: auto;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: crimson;
+    }
+       
+    
+    
+    .nav-attributes{
+        width:30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        visibility: hidden;
+        
+    }
+    .att{
+        font-size: 130%;       
+        height:40%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        padding: 1%;
+        border-radius: 15%;
+        background-color: rgb(101, 193, 193);
+    
+    }
+    
+    .att:hover{
+        font-size:160%;       
+        height:40%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+    
+    }
+    .nav-anchor{
+        font-size: 110%;       
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        border-radius: 15%;
+    
+    }
+    .nav-anchor:visited{
+        font-size: 130%;       
+        height:40%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        padding: 1%;
+        border-radius: 15%;
+    }
+    
+    
+    
+    
+    /* ########################################################################################################### */
+    
+    
+    
+    
+    
+    #about_myself{
+        position:relative;
+        z-index: -1;
+       
+    }
+    #image{
+        width: 31%;
+        height: 166px;
+        position: absolute;
+        border: 1px solid black;
+        right: -10%;
+        top: 0;
+        background-image: url(images/personal_image.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #abt{
+        border: 1px solid black;
+        width: 71%;
+        font-size: 436%;
+        padding-top: 0.6%;
+        padding-bottom: 3.5%;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bolder;
+        color: rgb(216, 234, 204);
+    
+    }
+    #webpage{
+        width: 98%;
+        margin:100px auto;
+    
+    
+    }
+    #my-info{
+        margin-top: 5%;
+        margin-left: 19px;
+        margin-right: -47px;
+        border: 1px solid black;
+        font-size: 166%;
+        font-weight: 400;
+        font-style: italic;
+        text-align: justify;
+        padding: 3%;
+        background-image: url(images/patt.jpg);
+        color: white;
+        background-size: cover;
+    }
+    
+    
+    /* ########################################################################################### */
+    
+    #educational-background{
+        margin:20% auto;
+        
+    
+    }
+    
+    .educational-heading{
+        color: white;
+        margin-right: -55px;
+    }
+    
+    
+    
+    .school{
+        display:flex;
+        margin-right:-55px;
+        justify-content: space-evenly;
+        background-color:grey;
+    }
+    
+    
+    .school-name{
+        font-size: 120%;
+    }
+    
+    .school-link{
+        font-size:100%;
+    }
+    
+    .school-link:hover{
+        font-size:200%;
+    }
+    
+    
+    /* ########################################################################################## */
+    
+    #achievements{
+        margin-top:20%;
+        margin-right:-55px;
+    }
+    
+    #achievement-heading{
+        font-size:40px;
+        text-align: center;
+        padding:20px;
+        color:white;
+    }
+    .achievements-list{
+        margin-top:30%;
+        width:100%;
+        margin:auto;
+        font-size: 200%;
+        background-color: grey;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .achievements-list-block{
+        width: 36%;
+        margin: auto;
+        font-size: 74%;
+        padding: 3%;
+    }
+    
+
+    .list-elements{
+        margin:10% 0;
+        text-align:center;
+        padding:4%;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: yellowgreen;
+        border-radius:5%;
+       
+    }
+    
+    .list-elements:hover{
+        margin:10% 0;
+        text-align:center;
+        padding:4%;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:yellow;
+        border-radius:5%;
+    }
+    
+    .trophy-image1,
+    .trophy-image2{
+        height: 535px;
+        margin-top: 8.5%;
+        width: 28%;
+        background-image: url(images/trophy_image.png);
+        background-size: contain;
+    }
+    
+    
+    /* ########################################################################################## */
+    
+    
+    
+    #skill-heading{
+        font-size:250%;
+        text-align: center;
+        padding:20px;
+        margin-top:40%;
+        margin-right: -55px;
+        background-color: rgb(5, 95, 18);
+        color: azure;
+    }
+    
+    #skillbox{
+        border:1px solid black;
+        display: flex;
+        margin-right: -55px;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-image: url(images/skill.jpg);
+        background-size: cover;
+    }
+    .skillset1{
+        width: 33%;
+        height: 90px;
+        margin: 1%;
+        border: 1px solid black;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .skillset2{
+        width: 33%;
+        height: 90px;
+        margin: 1%;
+        border: 1px solid black;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    }
+    
+    .skillname{
+        text-align: center;
+        font-size: 17px;
+        border-bottom: 1px solid black;
+        padding: 5px;
+        background-color: rgb(161, 144, 122);
+        color: antiquewhite;
+    }
+    
+    
+    .logo-image-box{
+        width: 100%;
+        border: 1px solid purple;
+        height: 86.5%;
+        background-color:rgb(85, 173, 144);
+    }
+    
+    #cpp_logo{
+       
+        height:98%;
+        width:43.5%;
+        margin:auto;
+        background-image: url(images/cpp_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #c_logo{
+        height: 98%;
+        width: 46%;
+        margin: auto;
+        background-image: url(images/c_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #html_logo{
+        
+        height:98%;
+        width:55%;
+        margin:auto;
+        background-image: url(images/html_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #css_logo{
+       
+        height:100%;
+        width:50%;
+        margin:auto;
+        background-image: url(images/css_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    #cricket_logo{
+        
+        height:99%;
+        width:66%;
+        margin:auto;
+        background-image: url(images/cricket_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    #badminton_logo{
+      
+        height:100%;
+        width:50%;
+        margin:auto;
+        background-image: url(images/badminton_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    
+    /* ############################################################################################ */
+    
+    #blogs{
+        margin: 15% auto;
+        height: 180px;
+        width: 106%;
+        border: 1px solid black;
+        background-color:darkblue;
+        margin-right: -42px;
+    }
+    
+    #blog-heading{
+        text-align: center;
+        margin-top:2%;
+        color:aliceblue;
+    }
+    
+    #blogs-link{
+        
+        width: 86%;
+        font-size: 24px;
+        margin-left: 26%;
+        margin-top: 10%;
+    }
+    #blogs-link:hover{
+        width:35%;
+        color: red;
+        font-size:40px;
+        margin-left:35%;
+        margin-top:8%;
+    }
+    
+    #blogs-link:visited{
+        width:25%;
+        font-size:30px;
+        margin-left:38%;
+        margin-top:8%;
+        color:black;
+        text-decoration: underline;
+    }
+    
+    
+    
+    #flink:hover{
+        color:red;
+        font-style: italic;
+    }
+    
+    /* ############################################################################################### */
+    
+    #socials{
+        margin-top: 20%;
+        margin-right: -55px;
+    
+    }
+    
+    #social-heading{
+        font-size:250%;
+        text-decoration: underline;
+        background-color: teal;
+        text-align: center;
+        padding:18px;
+        color: aliceblue;
+    }
+    
+    #socials-links{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        background-color:darkseagreen;
+    
+    }
+    
+    .link{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 19%;
+        height: 92px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    
+    .link:hover{
+        transform: scale(1.1);
+    }
+    
+    #instagram{
+        background-image: url(images/insta_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #github{
+        background-image: url(images/git_logo.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+    }
+    
+    #gmail{
+        background-image: url(images/gmail_logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    /* ################################################################################### */
+    
+    
+    #hyperlink{
+        margin-top: 20%;
+        margin-right: -100px;
+        margin-bottom: 10%;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    
+    }
+    
+    #hyperlink-heading{
+        width:40%;
+        font-size:32px;
+        border: 1px solid black;
+        padding:20px;
+        background-color: slategray;
+        text-align: center;
+        border-radius: 10%;
+    }
+    
+    #link-to{
+        width: 40%;
+        font-size:40px;
+        font-style: italic;
+        border: 1px solid black;
+        padding:10px;
+        background-color:slategray;
+        text-align: center;
+        border-radius: 10%;
+    }
+    
+    
+    #link-to:hover{
+        font-size: 55px;
+    }
+    
+    #link-to:visited{
+        color:black;
+        
+    }
+    
+    /* ########################################################################################### */
+    
+    #bottom-nav{
+        height:60px;
+        background-color: black;
+        position: absolute;
+        bottom:-1;
+        width:124%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+    
+    #bottom-nav-info{
+        color:white;
+        width:20%;
+        text-align: center;
+        font-size: 150%;
+    }
+    
+}
+
+@media  screen and (min-width:601px) and (max-width:1205px) {
+    
+    body {
+        margin: auto;
+        font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        overflow: auto;
+        background: linear-gradient(315deg, rgb(101, 8, 89) 3%, rgb(19, 55, 92) 38%, rgb(40, 101, 100) 68%, rgb(94, 24, 24) 98%);
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        background-attachment: fixed;
+    }
+    
+    @keyframes gradient {
+        0% {
+            background-position: 0% 0%;
+        }
+        50% {
+            background-position: 100% 100%;
+        }
+        100% {
+            background-position: 0% 0%;
+        }
+    }
+    
+    .wave {
+        background: rgb(255 255 255 / 25%);
+        border-radius: 1000% 1000% 0 0;
+        position: fixed;
+        width: 200%;
+        height: 12em;
+        animation: wave 10s -3s linear infinite;
+        transform: translate3d(0, 0, 0);
+        opacity: 0.8;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+    
+    .wave:nth-of-type(2) {
+        bottom: -1.25em;
+        animation: wave 18s linear reverse infinite;
+        opacity: 0.8;
+    }
+    
+    .wave:nth-of-type(3) {
+        bottom: -2.5em;
+        animation: wave 20s -1s reverse infinite;
+        opacity: 0.9;
+    }
+    
+    @keyframes wave {
+        2% {
+            transform: translateX(1);
+        }
+    
+        25% {
+            transform: translateX(-25%);
+        }
+    
+        50% {
+            transform: translateX(-50%);
+        }
+    
+        75% {
+            transform: translateX(-25%);
+        }
+    
+        100% {
+            transform: translateX(1);
+        }
+    }
+    
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 1;
+          }
+          25% {
+            opacity: 1;
+            color:darkblue;
+          }
+          50%{
+            color: green;
+          }
+          75%{
+            color:darkblue;
+          }
+          100% {
+            opacity: 1;
+          }
+      }
+    
+    /* ####################################################################### */
+    
+    
+    .stylebutton{
+        margin-right: 1%;
+        margin-left: 1%;
+        width:15%;
+        height:70%;
+        margin-top:0.8%;
+        font-size: 15px;
+        padding:0.5%;
+        border-radius:10%;
+        cursor:pointer;
+    }
+    .stylebutton:hover{
+        background-color: aqua;
+    }
+    
+    .b1{
+        background-color: white;
+        
+    }
+    .b2{
+        background-color: black;
+        color: white;
+    }
+    
+    /* ##################################################################################### */
+    
+ 
+    *{
+        margin:0%;
+        padding:0%;
+    }
+    
+    #navbar{
+        background-color: rgb(134, 151, 0);
+        border:1px solid black;
+        display: flex;
+        justify-content: space-evenly;
+        height:85px;
+        width: 100%;
+        position:fixed;
+        top:0;
+    
+    }
+    
+    #nav-heading{
+        animation: fadeIn 5s ease-in-out infinite;
+        width: 20%;
+        font-size: 131%;
+        font-weight: 600;
+        padding: auto;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+        color: crimson;
+    }
+       
+    
+    
+    .nav-attributes{
+        width:30%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items:center;
+        visibility: hidden;
+        
+    }
+    .att{
+        font-size: 130%;       
+        height:40%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        padding: 1%;
+        border-radius: 15%;
+        background-color: rgb(101, 193, 193);
+    
+    }
+    
+    .att:hover{
+        font-size:160%;       
+        height:40%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+    
+    }
+    .nav-anchor{
+        font-size: 110%;       
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        border-radius: 15%;
+    
+    }
+    .nav-anchor:visited{
+        font-size: 130%;       
+        height:40%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color:black;
+        cursor: pointer;
+        padding: 1%;
+        border-radius: 15%;
+    }
+    
+    
+    
+    
+    /* ########################################################################################################### */
+    
+    
+    
+    
+    
+    #about_myself{
+        position:relative;
+        z-index: -1;
+       
+    }
+    #image{
+        width: 23%;
+        height: 230px;
+        position: absolute;
+        border: 1px solid black;
+        right: -3%;
+        top: 0;
+        background-image: url(images/personal_image.jpeg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #abt{
+        border: 1px solid black;
+        width: 71%;
+        font-size: 436%;
+        padding-top: 7.6%;
+        padding-bottom: 12.5%;
+        text-align: center;
+        font-family: monospace;
+        font-weight: bolder;
+        color: rgb(216, 234, 204);
+    
+    }
+    #webpage{
+        width: 98%;
+        margin:100px auto;
+    
+    
+    }
+    #my-info{
+        margin-top: 5%;
+        margin-left: 19px;
+        margin-right: -47px;
+        border: 1px solid black;
+        font-size: 166%;
+        font-weight: 400;
+        font-style: italic;
+        text-align: justify;
+        padding: 3%;
+        background-image: url(images/patt.jpg);
+        color: white;
+        background-size: cover;
+    }
+    
+    
+    /* ########################################################################################### */
+    
+    #educational-background{
+        margin:20% auto;
+        
+    
+    }
+    
+    .educational-heading{
+        color: white;
+        margin-right: -55px;
+    }
+    
+    
+    
+    .school{
+        display:flex;
+        margin-right:-55px;
+        justify-content: space-evenly;
+        background-color:grey;
+    }
+    
+    
+    .school-name{
+        font-size: 120%;
+    }
+    
+    .school-link{
+        font-size:100%;
+    }
+    
+    .school-link:hover{
+        font-size:200%;
+    }
+    
+    
+    /* ########################################################################################## */
+    
+    #achievements{
+        margin-top:20%;
+        margin-right:-55px;
+    }
+    
+    #achievement-heading{
+        font-size:40px;
+        text-align: center;
+        padding:20px;
+        color:white;
+    }
+    .achievements-list{
+        margin-top:30%;
+        width:100%;
+        margin:auto;
+        font-size: 200%;
+        background-color: grey;
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .achievements-list-block{
+        width: 36%;
+        margin: auto;
+        font-size: 74%;
+        padding: 3%;
+    }
+    
+
+    .list-elements{
+        margin:10% 0;
+        text-align:center;
+        padding:4%;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color: yellowgreen;
+        border-radius:5%;
+       
+    }
+    
+    .list-elements:hover{
+        margin:10% 0;
+        text-align:center;
+        padding:4%;
+        font-family:Arial, Helvetica, sans-serif;
+        background-color:yellow;
+        border-radius:5%;
+    }
+    
+    .trophy-image1,
+    .trophy-image2{
+        height: 535px;
+        margin-top: 8.5%;
+        width: 28%;
+        background-image: url(images/trophy_image.png);
+        background-size: contain;
+    }
+    
+    
+    /* ########################################################################################## */
+    
+    
+    
+    #skill-heading{
+        font-size:250%;
+        text-align: center;
+        padding:20px;
+        margin-top:40%;
+        margin-right: -55px;
+        background-color: rgb(5, 95, 18);
+        color: azure;
+    }
+    
+    #skillbox{
+        border:1px solid black;
+        display: flex;
+        margin-right: -55px;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-image: url(images/skill.jpg);
+        background-size: cover;
+    }
+    .skillset1{
+        width: 33%;
+        height: 151px;
+        margin: 1%;
+        border: 1px solid black;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .skillset2{
+        width: 33%;
+        height: 151px;
+        margin: 1%;
+        border: 1px solid black;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    
+    }
+    
+    .skillname{
+        text-align: center;
+        font-size: 17px;
+        border-bottom: 1px solid black;
+        padding: 5px;
+        background-color: rgb(161, 144, 122);
+        color: antiquewhite;
+    }
+    
+    
+    .logo-image-box{
+        width: 100%;
+        border: 1px solid purple;
+        height: 86.5%;
+        background-color:rgb(85, 173, 144);
+    }
+    
+    #cpp_logo{
+       
+        height:98%;
+        width:43.5%;
+        margin:auto;
+        background-image: url(images/cpp_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #c_logo{
+        height: 98%;
+        width: 46%;
+        margin: auto;
+        background-image: url(images/c_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #html_logo{
+        
+        height:98%;
+        width:55%;
+        margin:auto;
+        background-image: url(images/html_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #css_logo{
+       
+        height:100%;
+        width:50%;
+        margin:auto;
+        background-image: url(images/css_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    #cricket_logo{
+        
+        height:99%;
+        width:66%;
+        margin:auto;
+        background-image: url(images/cricket_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    #badminton_logo{
+      
+        height:100%;
+        width:50%;
+        margin:auto;
+        background-image: url(images/badminton_logo.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    
+    }
+    
+    
+    /* ############################################################################################ */
+    
+    #blogs{
+        margin: 15% auto;
+        height: 180px;
+        width: 106%;
+        border: 1px solid black;
+        background-color:darkblue;
+        margin-right: -42px;
+    }
+    
+    #blog-heading{
+        text-align: center;
+        margin-top:2%;
+        color:aliceblue;
+    }
+    
+    #blogs-link{
+        
+        width: 86%;
+        font-size: 24px;
+        margin-left: 26%;
+        margin-top: 10%;
+    }
+    #blogs-link:hover{
+        width:35%;
+        color: red;
+        font-size:40px;
+        margin-left:35%;
+        margin-top:8%;
+    }
+    
+    #blogs-link:visited{
+        width:25%;
+        font-size:30px;
+        margin-left:38%;
+        margin-top:8%;
+        color:black;
+        text-decoration: underline;
+    }
+    
+    
+    
+    #flink:hover{
+        color:red;
+        font-style: italic;
+    }
+    
+    /* ############################################################################################### */
+    
+    #socials{
+        margin-top: 20%;
+        margin-right: -55px;
+    
+    }
+    
+    #social-heading{
+        font-size:250%;
+        text-decoration: underline;
+        background-color: teal;
+        text-align: center;
+        padding:18px;
+        color: aliceblue;
+    }
+    
+    #socials-links{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        background-color:darkseagreen;
+    
+    }
+    
+    .link{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 19%;
+        height: 155px;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    
+    .link:hover{
+        transform: scale(1.1);
+    }
+    
+    #instagram{
+        background-image: url(images/insta_logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #github{
+        background-image: url(images/git_logo.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+    }
+    
+    #gmail{
+        background-image: url(images/gmail_logo.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    /* ################################################################################### */
+    
+    
+    #hyperlink{
+        margin-top: 20%;
+        margin-right: -100px;
+        margin-bottom: 10%;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    
+    }
+    
+    #hyperlink-heading{
+        width:40%;
+        font-size:32px;
+        border: 1px solid black;
+        padding:20px;
+        background-color: slategray;
+        text-align: center;
+        border-radius: 10%;
+    }
+    
+    #link-to{
+        width: 40%;
+        font-size:40px;
+        font-style: italic;
+        border: 1px solid black;
+        padding:10px;
+        background-color:slategray;
+        text-align: center;
+        border-radius: 10%;
+    }
+    
+    
+    #link-to:hover{
+        font-size: 55px;
+    }
+    
+    #link-to:visited{
+        color:black;
+        
+    }
+    
+    /* ########################################################################################### */
+    
+    #bottom-nav{
+        height:60px;
+        background-color: black;
+        position: absolute;
+        bottom:-1;
+        width:124%;
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+        align-items: center;
+    }
+    
+    #bottom-nav-info{
+        color:white;
+        width:20%;
+        text-align: center;
+        font-size: 150%;
+    }
+    
+}

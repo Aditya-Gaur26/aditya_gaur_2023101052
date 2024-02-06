@@ -1,0 +1,56 @@
+body{
+    background-color: aquamarine;
+}
+
+#heading-box{
+        
+    text-align: center;
+    font-size:60px;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+
+#blogs{
+    display:flex;
+    justify-content:space-around;
+    
+
+}
+
+#blog-1,
+#blog-2{
+    background-color: blanchedalmond;
+    width:35%;
+   
+    border: 1px solid black;
+    text-align: justify;
+    padding:1%;
+    font-size:20px;
+    color: black;
+}
+
+#blogs-heading{
+    display:flex;
+    justify-content:space-around;
+
+}
+.h{
+    width:35%;
+    font-size:40px;
+    text-align:center;
+    padding:2%;
+    text-decoration: underline;
+
+}
+
+#like-counter{
+    display:flex;
+    justify-content: space-around;
+}
+
+.like-area{
+    margin-top:1.5%;
+    margin-bottom:3%;
+}
